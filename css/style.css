@@ -1,0 +1,226 @@
+/*BODY*/
+
+body {
+	padding: 2em 2em 2em 2em;
+	font-weight: 300;
+	font-family: Lato, Arial, sans-serif;
+	background-image: url("../images/bright_squares.png");
+	font-size: 1.1em;
+}
+
+/*NAVIGATION*/
+
+nav {
+	text-align: right;
+	padding-bottom: 2em;
+	position: fixed;
+	top: 2em;
+	width: 40em;
+}
+
+nav ul {
+	background-color: rgba(255, 255, 255, 0.5);
+	padding-bottom: 0.9em;
+	padding-top: 0.8em;
+	border-radius: 0.5em;
+	padding-right: 1em;
+}
+
+nav li {
+	display: inline;
+}
+
+nav a {
+	color: #c30000;
+	text-decoration: none;
+	font-weight: 900;
+	font-style: italic;
+	padding: 0em;
+	border-radius: 0.3em;
+	font-size: 1.2em;
+	-webkit-transition: all 0.25s ease-in;
+}
+
+nav a:hover {
+	color: rgb(98, 0, 131);
+	background-color: rgba(0, 0, 0, 0);
+	text-shadow: 0px 0px 2px #ffffff;
+	-webkit-transition: all 0.25s ease-in;
+}
+
+nav li a span {
+	border-bottom: 4px solid rgba(98, 0, 131, 0.0);
+	-webkit-transition: border-color 0.5s ease-in;
+}
+
+nav li a:hover span {
+	border-bottom: 4px solid rgba(98, 0, 131, 1.0);
+	-webkit-transition: border-color 0.5s ease-in;
+}
+
+nav a:active {
+	color: rgb(180, 198, 0);
+}
+
+nav li a:active span {
+	border-bottom: 4px solid rgb(180, 198, 0);
+}
+
+/*FOOTER*/
+
+footer {
+	margin-top: 1em;
+	padding-top: 0.5em;
+	text-align: center;
+	border-top: 4px solid #cccccc;
+	font-size: 0.8em;
+}
+
+/*MAIN CONTENT*/
+
+/*MAIN CONTENT: Large container*/
+
+div.big-container {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 40em;
+	
+}
+
+/*MAIN CONTENT: Headers*/
+
+h1 {
+	font-size: 4em;
+	font-weight: 900;
+	color: rgb(98, 0, 131);
+	text-shadow: 0px 1px 0px #ffffff;
+	-webkit-transition: all 4s ease-in;
+	margin-bottom: 0.1em;
+}
+
+h1:hover{
+	color: rgb(168, 0, 117);
+	-webkit-transition: all 4s ease-in;	
+}
+
+h2 {
+	color: #333333;
+	font-size: 1.5em;
+	font-weight: 400;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	padding-bottom: 0.2em;
+	border-bottom: 1px solid #aaaaaa;
+	box-shadow: 0px 1px 0px #ffffff;
+}
+
+section.quick-information h2 {
+	font-size: 1em;
+/*	padding-top: 0.5em;*/
+	text-transform: uppercase;
+}
+
+section.detailed-information h2 {
+	padding-top: 0.2em;
+}
+
+h3, dt {
+	color: #555555;
+	font-size: 0.8em;
+	font-weight: 700;
+	margin-bottom: 0.2em;
+	margin-top: 1em;
+}
+
+/*MAIN CONTENT: Paragraphs elements*/
+
+p {
+	font-size: 1em;
+	margin-bottom: 0.5em;
+	line-height: 1.2em;
+}
+
+section.quick-information p, section.quick-information dd {
+	font-size: 0.9em;
+}
+
+/*MAIN CONTENT: Standard list elements*/
+
+li {
+/*	display: inline;*/
+	list-style-type: square;
+	margin-left: 1.3em;
+	margin-bottom: 0.4em;
+}
+
+.content-header p {
+	margin-bottom: 1em;
+}
+
+section.content-header {
+	margin-top: 4em;
+}
+
+section.quick-information {
+	background-color: rgba(255, 255, 255, 0.35);
+	padding: 1em;
+	float: left;
+	width: 12em;
+}
+
+section.detailed-information {
+	margin-left: 15em;
+}
+
+/*MAIN CONTENT: Links*/
+
+a {
+	color: #008bc1;
+	-webkit-transition: all 0.25s ease-in;
+}
+
+a:hover{
+	background-color: rgba(255, 255, 255, 1.0);
+	-webkit-transition: all 0.25s ease-in;
+}
+
+a:active{
+	background-color: rgba(255, 255, 255, 1.0);
+	color: rgb(180, 198, 0);
+}
+
+/*MAIN CONTENT: Images*/
+
+img.photo {
+	background-color: #ffffff;
+	padding: 0.5em;
+	margin-bottom: 0.5em;
+	box-shadow: 0px 0px 12px #888888;
+	-webkit-transform: rotate(-2deg);
+	-webkit-transition: all 0.25s ease-in;
+}
+
+img.photo:hover {
+	-webkit-transform: rotate(-4deg);
+	-webkit-transition: all 0.25s ease-in;
+}
+
+/* **************** */
+
+/*Clear fixes*/
+
+/* Container Utilities*/
+.fl-fix {overflow: auto; zoom:1;}
+
+/* 
+* The Micro Clearfix solution from http://nicolasgallagher.com/micro-clearfix-hack/
+* Licensed under the MIT license
+*/
+
+/* For modern browsers */
+.fl-clearfix:before, .fl-clearfix:after {content:""; display:table;}
+.fl-clearfix:after {clear:both;}
+
+/* For IE 6/7 (trigger hasLayout) */
+.fl-clearfix {zoom:1;}
