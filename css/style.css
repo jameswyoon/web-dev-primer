@@ -202,8 +202,30 @@ img.photo {
 }
 
 img.photo:hover {
+	/*box-shadow: 0 0 24px #bdf1ff;*/
 	-webkit-transform: rotate(-4deg);
-	-webkit-transition: all 0.25s ease-in;
+	-webkit-transition: -webkit-transform 1s ease/*, box-shadow 1s ease-in*/;
+	
+	/*-webkit-transition: background-color 1s ease-in, -webkit-transform 1s ease;*/
+
+	-webkit-animation-name: glowing-pulse;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	
+}
+
+@-webkit-keyframes glowing-pulse {
+	0% {
+		box-shadow: 0 0 12px #888888;
+	}
+	50% {
+		box-shadow: 0 0 32px #fdfca8;
+	}
+/*	100% {
+		box-shadow: 0 0 12px #888888;
+	}*/
 }
 
 /* **************** */
